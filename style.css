@@ -1,0 +1,451 @@
+/* Font Links */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Ubuntu&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Sriracha&family=Ubuntu&display=swap');
+
+
+
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Ubuntu", sans-serif;
+    /* overflow: hidden; */
+}
+.hero {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background: linear-gradient(gray,rgb(78, 76, 76));
+    overflow: hidden;
+
+}
+
+.disp {
+    display: block;
+
+}
+.disp2{
+  
+    display: none;
+}
+
+nav {
+    display: none;
+    width: 20%;
+    z-index: 110;
+    position: absolute;
+    /* transform: translate(-10vw); */
+    height: 100vh;
+    background-image: linear-gradient(rgb(163, 141, 141), rgb(145, 133, 112), rgb(10, 10, 9));
+    padding: 0.2rem 0.6rem;
+    opacity: 1;
+    animation-name: animate;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+/* border: 1px solid red; */
+}
+
+@keyframes animate {
+    from {
+        transform: translate(-30vw);
+    }
+
+    to {
+        transform: translate(0vw);
+    }
+}
+@keyframes animate2 {
+    from {
+        transform: translate(0vw);
+    }
+
+    to {
+        transform: translate(-30vw);
+    }
+}
+
+nav #sidebar {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: space-around;
+    /* border: 2px solid red; */
+    z-index: 4;
+
+    /* background-color: wheat; */
+}
+
+nav #sidebar #itemCont {
+    height: 40%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* border: 2px solid green; */
+}
+
+nav #sidebar li {
+    display: flex;
+    /* justify-content: space-evenly; */
+    align-items: flex-start;
+    border-bottom: 1px solid black;
+    /* border-top: 1px solid black; */
+    list-style-type: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+
+
+
+}
+
+#sidebar li:nth-child(1) {
+    border-top: 1px solid black;
+    padding-top: 1.4rem;
+}
+
+#sidebar li a::after {
+    content: " >";
+    /* width: 15rem; */
+    position: absolute;
+    left: 40%;
+    /* height: 100%; */
+    color: white;
+    float: right;
+    /* border: 2px solid red; */
+    /* display: none; */
+    /* visibility: hidden; */
+    opacity: 0;
+    transition: opacity 0.5s ease, left 0.3s ease-in-out;
+
+
+}
+
+#sidebar li:hover a {
+    /* background-color: gray; */
+    color: white;
+    padding-left: 0.8rem;
+
+}
+.active{
+    color: white;
+    padding-left: 0.8rem;
+}
+
+#sidebar li:hover a::after {
+    /* color: green; */
+    /* visibility: visible; */
+    left: 90%;
+    opacity: 1;
+}
+
+
+#sidebar li a {
+    text-decoration: none;
+    color: black;
+    transition: color 0.25s ease-in-out, padding 0.3s ease-out, opacity 0.3s ease;
+}
+
+#signIn {
+    font-size: 1.3rem;
+    height: 3rem;
+    width: 100%;
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgb(32, 32, 32);
+}
+
+#close {
+    border: none;
+    background-color: transparent;
+    display: flex;
+    align-items: baseline;
+    /* padding: 2px 0.8rem; */
+    justify-content: flex-end;
+    font-size: 1.7rem;
+}
+
+#close span {
+    cursor: pointer;
+    transition: color 0.1s ease-in-out;
+
+}
+
+#close:hover span {
+    color: white;
+
+}
+
+#logo {
+    /* margin-bottom: 03rem; */
+    font-size: 3rem;
+    text-shadow: 2px 3px 1px white;
+    /* border: 2px solid red; */
+    text-align: center;
+    font-family: "Lilita One", sans-serif;
+    letter-spacing: 2px;
+    list-style: 14px;
+}
+
+#socialMedia{
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 13%;
+    display: flex;
+    margin-top: 2rem;
+    justify-content: center;
+    align-items: flex-start;
+
+    flex-wrap: wrap;
+    /* margin-top: 1rem; */
+}
+#socialMedia span{
+    width: 3rem;
+    height: 2rem;
+    /* border: 2px solid red; */
+    text-align: center;
+    padding: 0.4rem 0.5rem;
+
+}
+#socialMedia span i{
+    font-size: 25px;
+    transition: color 0.2s ease-in-out;
+    /* border: 2px solid black; */
+}
+#socialMedia span:hover{
+   cursor: pointer;
+color: white;
+}
+
+/* Hero page Styling */
+#container {
+    width: 100%;
+    height: 100vh;
+}
+
+#navbar {
+    width: 100%;
+    position: fixed;
+    z-index: 31;
+    background: linear-gradient(90deg, rgb(74, 75, 72), rgb(73, 62, 62), rgb(182, 85, 85));
+    height: 14vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    align-items: center;
+    /* visibility: hidden; */
+    /* opacity: 0; */
+    transition: opacity 0.4s ease-in-out;
+    animation-name: animi;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1s;
+}
+@keyframes animi {
+    from{
+        transform: translateY(-13vh);
+    }
+    to{
+        to{
+            transform: translateY(0);
+        }
+    }
+    
+}
+
+
+
+#btn {
+    color: white;
+    opacity: 0.7;
+    font-size: 1.9rem;
+    font-weight: 900;
+    cursor: pointer;
+    transition: opacity 0.2s ease-in-out, font-size 0.2s ease-in-out;
+}
+
+#btn:hover {
+    font-size: 2.2rem;
+    opacity: 1;
+    color: white;
+}
+
+#profileSection{
+    width: 60%;
+    height: 67vh;
+    /* background-color: black; */
+    /* border: 2px solid red; */
+    display: flex;
+    top: 50%;
+    z-index: 3;
+    left: 50%;
+    position: relative;
+    transform: translate(-50%,-50%);
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+}
+#section-1{
+    /* border:2px solid red; */
+    width: 53%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+#image{
+    /* border: 2px solid red; */
+    width: 50%;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+
+}
+#image img{
+    width: 16vw;
+    border: 1px solid white;
+    /* border-radius: 100%; */
+    /* height: 38vh; */
+    border-bottom-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+}
+#textCont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column-reverse;
+    width: 50%;
+    height: 10vh;
+}
+#textCont span:nth-child(2){
+    color: white;
+    font-family: "Sriracha", cursive;
+    font-size: 24px;
+}
+#section-2{
+    width: 47%;
+    height: 100%;
+    /* background-color: aquamarine; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    row-gap: 2rem;
+    flex-direction: column;
+}
+
+#tagline{
+    font-size: 24px;
+  
+}
+#cvBtn{
+    border:none;
+    border-radius: 5px;
+    width: 60%;
+    background-color: cornsilk;
+    margin-right: 1.6rem;
+    font-size: 1.4rem;
+    cursor: pointer;
+    height: 3rem;
+    box-shadow: 2px 3px 1px green;
+    transition: box-shadow 0.3s ease;
+}
+#cvBtn:hover{
+    box-shadow:  2px 3px 1px red;
+    background-color: rgb(245, 241, 227);
+}
+#key{
+    color: white;
+}
+#circle{
+    width: 20vw;
+    height: 20vw;
+    background-color: transparent;
+    box-shadow: 2px 3px 4px 23px rgb(141, 131, 131),inset 2px 4px 5px rgb(209, 88, 88,0.7),2px 3px 4px 3px black;
+    position: absolute;
+    /* transform: rotate3d(360deg); */
+    overflow-x: hidden;
+    z-index: 2;
+    border-radius:100% ;
+    transition: all 2.4s ease;
+    animation-name: animi2;
+    animation-timing-function: ease-in-out;
+    animation-duration: 15s;
+    animation-delay: 0.3s;
+    animation-fill-mode: backwards;
+    animation-iteration-count: infinite;
+}
+@keyframes animi2 {
+    0%{
+        top: 10%;
+        left: 0%;
+    }
+    10%{
+        top:10%;
+        left: 30%;
+    }
+    20%{
+        top: 10%;
+        transform: rotateY(40deg);
+        left: 70%;
+    }
+    30%{
+        top:56%;
+        left: 70%;
+        transform: rotateY(60deg);
+
+    }
+    40%{
+        top: 56%;
+        left: 50%;
+        opacity: 0;
+
+    }
+    50%{
+        top: 56%;
+        left: 10%;
+        opacity: 0.6;
+    }
+    60%{
+        top: 40%;
+             transform: rotateY(70deg);
+
+        left:10%
+    }
+    70%{
+        top: 40%;
+        left:30%
+    }
+    80%{
+        top: 40%;
+        left:70%;
+        transform: rotateY(90deg);
+
+    }
+    90%{
+        top: 10%;
+        left:30%
+    }
+    100%{
+        top: 10%;
+        left:10%
+    }
+    
+}
+
+
