@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
-    <title>Final Project</title>
+    <title>Pankaj's Portfolio</title>
 </head>
 
 <body>
-    <div class="hero">
+    <div class="hero" id="heroPage">
         <nav>
             <div id="sidebar">
 
@@ -18,10 +18,10 @@
                 <div id="logo">Aarzoo</div>
                 <ul id="itemCont">
 
-                    <li><a href="#">Home</a></li>
+                    <li><a href="#heroPage">Home</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Services</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#ContactPage">Contact</a></li>
                 </ul>
                 <button id="signIn">Resume</button>
 
@@ -57,10 +57,11 @@
                     </div>
                 </div>
                 <div id="section-2">
-                   <span id="tagline">
-                    "Turning Visions into <span id="key">Profitable</span>  &nbsp;&nbsp;and  <span id="key">Adorable</span> Websites!"
-                   </span> 
-                   <button id="cvBtn">Download CV</button>
+                    <span id="tagline">
+                        "Turning Visions into <span id="key">Profitable</span> &nbsp;&nbsp;and <span
+                            id="key">Adorable</span> Websites!"
+                    </span>
+                    <button id="cvBtn">Download CV</button>
                 </div>
 
 
@@ -76,8 +77,42 @@
 
     </div>
 
-    <div id="content">
-   
+    <div id="ContactPage">
+        <div id="left">
+            <h2 id="formHead">Contact </h2>
+
+            <p id="infoDesc">Hi there!
+                I’m excited to collaborate on your next web project! As a skilled front-end developer, I specialize in
+                creating beautiful, responsive, and user-friendly websites. Whether you need a complete website, a
+                redesign, or help with specific features, I'm here to bring your vision to life..</p>
+            <span class="info">
+                <h3>Address</h3>
+                <h4>Salarpur,Meruut,Delhi-NCR</h4>
+            </span>
+            <span class="info">
+                <h3>Phone</h3>
+                <h4>+91 7017105535</h4>
+            </span>
+            <span class="info">
+                <h3>Email</h3>
+                <h4>pankajray1288@gmail.com</h4>
+            </span>
+
+        </div>
+        <div id="right">
+
+            <form action="index.php" autocomplete="off" autofill="off">
+                <h2 id="formHead">Contact Form</h2>
+                <input type="text" name="" id="" placeholder="Name">
+                <input type="phone" name="" id="" placeholder="Phone Number">
+                <input type="email" name="" id="" placeholder="Email">
+                <input type="text" name="" id="" placeholder="Company/Agency Name">
+                <textarea name="" id="" placeholder="About Work" rows="7"></textarea>
+
+                <input type="submit" value="Submit" id="submitBtn">
+            </form>
+
+        </div>
     </div>
 
 

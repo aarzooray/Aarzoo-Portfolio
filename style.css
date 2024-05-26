@@ -21,7 +21,8 @@
     width: 100%;
     height: 100vh;
     display: flex;
-    background: linear-gradient(gray,rgb(78, 76, 76));
+    background-image: radial-gradient(gray,black);
+
     overflow: hidden;
 
 }
@@ -35,11 +36,16 @@
     display: none;
 }
 
+.navAnimate{
+animation-name: animate2;
+animation-timing-function: ease-in-out;
+animation-duration: 1s;
+}
 nav {
     display: none;
     width: 20%;
     z-index: 110;
-    position: absolute;
+    position: fixed;
     /* transform: translate(-10vw); */
     height: 100vh;
     background-image: linear-gradient(rgb(163, 141, 141), rgb(145, 133, 112), rgb(10, 10, 9));
@@ -249,7 +255,7 @@ color: white;
     transition: opacity 0.4s ease-in-out;
     animation-name: animi;
     animation-timing-function: ease-in-out;
-    animation-duration: 1s;
+    animation-duration: 0.4s;
 }
 @keyframes animi {
     from{
@@ -309,15 +315,17 @@ color: white;
     /* border: 2px solid red; */
     width: 50%;
     height: 50vh;
+    perspective: 3;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: auto;
-
+    
 }
 #image img{
     width: 16vw;
     border: 1px solid white;
+    transform: rotate3d(34deg,342deg,12deg);
     /* border-radius: 100%; */
     /* height: 38vh; */
     border-bottom-left-radius: 2rem;
@@ -449,3 +457,121 @@ color: white;
 }
 
 
+
+/* Contact Page Styling */
+
+
+
+#ContactPage{
+    /* border: 2px solid black; */
+    width: 100%;
+    height: 100vh;
+    background-image: radial-gradient(gray,black);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    justify-content: space-around;
+
+}
+#left{
+    width: 45%;
+    height: 90vh;
+    /* background-color: rgb(39, 233, 14); */
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 3rem;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: left;
+    color: white;
+    line-height: 20px;
+}
+#infoDesc{
+    display: flex;
+    justify-content: center;
+    /* border: 2px solid red; */
+    align-content: center;
+    text-align: center;
+}
+.info{
+    /* border: 2px solid red; */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    /* row-gap: 2rem; */
+    height: 4rem;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.info:nth-child(odd)
+{
+    font-size: 17px;
+    color: white;
+}
+h4{
+    font-weight: 100;
+    color: ghostwhite;
+}
+#right{
+    width: 45%;
+    height: 100vh;
+    /* background-color: white; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 34px;
+    color: white;
+
+}
+#right form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: black;
+    width: 100%;
+    border-radius: 0.4rem;
+    box-shadow:  1px 1px 1px 0.3px gainsboro,inset 2px 2px 1px 2px rgb(7, 7, 7);
+    height: 90%;
+    
+}
+input{
+    border: none;
+    border-bottom:2px solid gray;
+    height: 10%;
+    background-color: transparent;
+    width: 70%;
+    outline: none;
+    padding: 0.4rem 0.2rem;
+    font-size: 17px;
+    color: white;
+}
+textarea{
+    background: transparent;
+    columns:29;
+    font-size: 17px;
+    outline: none;
+    border: 2px solid gray;
+    border-radius: 4px;
+    padding: 0.5rem 0.4rem;
+    width: 70%;
+    resize: none;
+    color: white;
+}
+
+#submitBtn{
+    width: 40%;
+    background-color: rgb(37, 34, 34);
+    height: 10%;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 1px 2px 3px 2px rgba(78, 69, 69,0.8);
+}
+
+#formHead{
+    font-size: 2.7rem;
+}
