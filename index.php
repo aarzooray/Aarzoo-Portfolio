@@ -1,3 +1,48 @@
+<?php
+
+if(isset($_POST["name"]))
+{
+
+$server = "localhost";
+$username = "root";
+$password = "";
+
+
+$conn = mysqli_connect($server,$username,$password);
+
+if(!$conn)
+{
+    die("Connection to this database failed due to ". mysqli_error($conn));
+}
+
+
+
+$name = $_POST['name'];
+$phonenumber = $_POST['phonenumber'];
+$email = $_POST['email'];
+$companyagencyname = $_POST['companyagencyname'];
+$aboutwork = $_POST['aboutwork'];
+
+
+$sql = "INSERT INTO `portfoliodatabase`.`details` ( `name`, `phonenumber`, `email`, `companyagencyname`, `aboutwork`, `date`) VALUES ( '$name', '$phonenumber', '$email', '$companyagencyname', '$aboutwork', current_timestamp());";
+
+
+
+// echo $sql;
+if($conn->query($sql)==true)
+{
+    // echo "Successfully inserted";
+}
+else{
+    echo "ERROr: $sql <br> $conn->error";
+}
+
+$conn->close();
+}
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -87,7 +132,7 @@
                 redesign, or help with specific features, I'm here to bring your vision to life..</p>
             <span class="info">
                 <h3>Address</h3>
-                <h4>Salarpur,Meruut,Delhi-NCR</h4>
+                <h4>Salarpur,Meerut,Delhi-NCR</h4>
             </span>
             <span class="info">
                 <h3>Phone</h3>
@@ -101,13 +146,13 @@
         </div>
         <div id="right">
 
-            <form action="index.php" autocomplete="off" autofill="off">
+            <form action="index.php" method="post" autocomplete="off" autofill="off">
                 <h2 id="formHead">Contact Form</h2>
-                <input type="text" name="" id="" placeholder="Name">
-                <input type="phone" name="" id="" placeholder="Phone Number">
-                <input type="email" name="" id="" placeholder="Email">
-                <input type="text" name="" id="" placeholder="Company/Agency Name">
-                <textarea name="" id="" placeholder="About Work" rows="7"></textarea>
+                <input type="text" name="name" id="" placeholder="Name">
+                <input type="phone" name="phonenumber" id="" placeholder="Phone Number">
+                <input type="email" name="email" id="" placeholder="Email">
+                <input type="text" name="companyagencyname" id="" placeholder="Company/Agency Name">
+                <textarea name="aboutwork" id="" placeholder="About Work" rows="7"></textarea>
 
                 <input type="submit" value="Submit" id="submitBtn">
             </form>
@@ -123,3 +168,5 @@
 </body>
 
 </html>
+
+<!-- INSERT INTO `details` (`s.no`, `Name`, `Phone Number`, `Email`, `Company/Agency Name`, `AboutWokr`, `date`) VALUES ('10', 'Pankaj Kumar Ray', '9807659460', 'pankajray1288@gmail.com', 'AarzooWebTechnologyPrivateLtd', 'Hello', current_timestamp()); -->

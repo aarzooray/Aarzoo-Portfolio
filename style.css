@@ -546,6 +546,8 @@ input{
     padding: 0.4rem 0.2rem;
     font-size: 17px;
     color: white;
+    background-color: none;
+
 }
 textarea{
     background: transparent;
