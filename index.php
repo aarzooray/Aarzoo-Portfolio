@@ -1,47 +1,43 @@
 <?php
 
-if(isset($_POST["name"]))
-{
+if (isset($_POST['name']))
+ {
 
-$server = "localhost";
-$username = "root";
-$password = "";
-
-
-$conn = mysqli_connect($server,$username,$password);
-
-if(!$conn)
-{
-    die("Connection to this database failed due to ". mysqli_error($conn));
-}
+    $server = "localhost";
+    $username = "root";
+    $password = "";
 
 
+    $conn = mysqli_connect($server, $username, $password);
 
-$name = $_POST['name'];
-$phonenumber = $_POST['phonenumber'];
-$email = $_POST['email'];
-$companyagencyname = $_POST['companyagencyname'];
-$aboutwork = $_POST['aboutwork'];
-
-
-$sql = "INSERT INTO `portfoliodatabase`.`details` ( `name`, `phonenumber`, `email`, `companyagencyname`, `aboutwork`, `date`) VALUES ( '$name', '$phonenumber', '$email', '$companyagencyname', '$aboutwork', current_timestamp());";
+    if (!$conn) {
+        die("Connection to this database failed due to " . mysqli_error($conn));
+    }
 
 
 
-// echo $sql;
-if($conn->query($sql)==true)
-{
-    // echo "Successfully inserted";
-}
-else{
-    echo "ERROr: $sql <br> $conn->error";
-}
+    $Name = $_POST['Name'];
+    $PhoneNumber = $_POST['PhoneNumber'];
+    $Email = $_POST['email'];
+    $CompanyName = $_POST['CompanyName'];
+    $AboutWork = $_POST['AboutWork'];
 
-$conn->close();
+
+    $sql = "INSERT INTO `portfoliodatabase`.`client_details` ( `Name`, `PhoneNumber`, `Email`, `CompanyName`, `AboutWork`, `date`) VALUES ( '$Name', '$PhoneNumber', '$Email', '$CompanyName', '$AboutWork', current_timestamp());";
+
+
+
+    // echo $sql;
+    if ($conn->query($sql) == true) {
+        // echo "Successfully inserted";
+    } else {
+        echo "ERROR: $sql <br> $conn->error";
+    }
+
+    $conn->close();
 }
 
 ?>
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -131,6 +127,10 @@ $conn->close();
                 creating beautiful, responsive, and user-friendly websites. Whether you need a complete website, a
                 redesign, or help with specific features, I'm here to bring your vision to life..</p>
             <span class="info">
+                <h3>Name</h3>
+                <h4>Pankaj Kumar Ray</h4>
+            </span>
+            <span class="info">
                 <h3>Address</h3>
                 <h4>Salarpur,Meerut,Delhi-NCR</h4>
             </span>
@@ -146,13 +146,14 @@ $conn->close();
         </div>
         <div id="right">
 
-            <form action="index.php" method="post" autocomplete="off" autofill="off">
+            <form action="index.php" method="post">
                 <h2 id="formHead">Contact Form</h2>
-                <input type="text" name="name" id="" placeholder="Name">
-                <input type="phone" name="phonenumber" id="" placeholder="Phone Number">
+               
+                <input type="text" name="name" id="" placeholder="Name" autocomplete="off">
+                <input type="phone" name="phonenumber" id="" placeholder="Phone Number" autocomplete="off">
                 <input type="email" name="email" id="" placeholder="Email">
                 <input type="text" name="companyagencyname" id="" placeholder="Company/Agency Name">
-                <textarea name="aboutwork" id="" placeholder="About Work" rows="7"></textarea>
+                <textarea name="aboutwork" id="" placeholder="Description of Work" rows="7"></textarea>
 
                 <input type="submit" value="Submit" id="submitBtn">
             </form>
@@ -169,6 +170,12 @@ $conn->close();
 
 </html>
 
+
 <!-- INSERT INTO `details` (`s.no`, `Name`, `Phone Number`, `Email`, `Company/Agency Name`, `AboutWokr`, `date`) VALUES ('10', 'Pankaj Kumar Ray', '9807659460', 'pankajray1288@gmail.com', 'AarzooWebTechnologyPrivateLtd', 'Hello', current_timestamp()); -->
+
+
+<!-- INSERT INTO `details` (`s.no`, `Name`, `Phone Number`, `Email`, `Company/Agency Name`, `AboutWokr`, `date`) VALUES ('10', 'Pankaj Kumar Ray', '9807659460', 'pankajray1288@gmail.com', 'AarzooWebTechnologyPrivateLtd', 'Hello', current_timestamp()); -->
+
+
 
 

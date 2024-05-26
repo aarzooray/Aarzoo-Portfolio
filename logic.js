@@ -20,19 +20,19 @@ window.addEventListener("DOMContentLoaded", function () {
         if (btn) {
 
             let ct = 0;
+
             btn.addEventListener("click", function () {
                 if (ct == 0) {
-
-                    nav.classList.remove("disp2")
-                    nav.classList.toggle("disp")
+                    nav.classList.add("disp")
                     ct = 1;
                 }
                 else {
-                    nav.classList.toggle("disp")
-                    nav.classList.toggle("navAnimate")
-
+                    // nav.classList.add("navAnimate")
+                    
+                    nav.classList.remove("disp")
+                    nav.classList.remove("disp2");
+                    ct = 0;
                 }
-                // nav.classList.toggle("disp2")
             })
 
         }
@@ -70,9 +70,6 @@ function typingEffect() {
 typingEffect();
 
 
-let navbar = document.querySelector("nav");
-
-let sidebar = document.querySelector("#sidebar")
 let navy = document.querySelector("#navbar")
 
 
@@ -86,7 +83,7 @@ window.addEventListener("scroll", function (dets) {
 
     }
     else {
-        console.log("scroll up");
+        // console.log("scroll up");
         navy.style.display = "flex"
     }
 
