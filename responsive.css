@@ -1,0 +1,129 @@
+@media (max-width:600px) {
+    #navbar{
+        /* border: 2px solid red; */
+        height: 4.5em;
+        /* font-size: 1.3em; */
+    }
+    #logo{
+        font-size: 3.2em;
+    }
+    #ContactPage{
+        display: flex;
+        flex-direction: column;
+        /* border: 2px solid red; */
+        /* background-color: red; */
+        height: auto;
+    }
+    #left{
+        font-size: 16px;
+        /* border: 2px solid green; */
+        width: 90%;
+        padding: 1rem 0.5rem;
+    }
+    #right{
+        /* border: 2px solid red; */
+        width: 90%;
+        height: 100vh;
+        font-size: 16px;
+    }
+    #right form{
+    background-color: black;
+    height: 90%;
+
+    }
+    #formHead
+{
+    font-size: 1.5em;
+}
+#btn{
+    /* color: red; */
+    font-size: 1.6rem;
+}
+#btn:hover{
+    font-size: 1.65rem;
+}
+nav{
+    width: 50%;
+    font-size: 10px;
+}
+
+#sidebar{
+    /* background-color: red; */
+    width: 50%;
+    height: 100%;
+
+}
+#itemCont{
+    height: 30%;
+    /* border: 2px solid green; */
+}
+#itemCont li a{
+    /* color :red; */
+    /* border: 2px solid red; */
+    padding: 0.4em 0em;
+}
+
+#sidebar #itemCont li{
+    /* border: 2px solid red; */
+    padding: 0.5rem 0.3em;
+    font-size: 1.8em
+
+
+}
+#navbar #logo{
+    font-size: 2em;
+}
+.hero{
+    height: 80vh;
+    
+}
+input{
+    padding: 0.9em 0.2em;
+}
+#profileSection{
+    /* border: 2px solid red; */
+    width: 100%;
+    font-size: 10px;
+    height:40vh;
+}
+#profileSection #image{
+    width: 100%;
+    /* border: 2px solid red; */
+    
+}
+#image img{
+    width: 70%;
+    border-radius: 1em;
+}
+#tagline{
+    /* border: 2px solid red; */
+    font-size: 1.3em;
+}
+#cvBtn{
+    font-size: 1.2em;
+    height: 2.8em;
+    width: 80%;
+
+}
+#textCont{
+    width: 100%;
+}
+#profession{
+    font-size: 2em;
+    /* color: red; */
+    /* border: 2px solid green; */
+    /* background-color: red; */
+}
+#textCont span:nth-child(2){
+    /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+    font-size: 1.5em;
+
+}
+#submitBtn{
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    height: 9%;
+    justify-content: center;
+}
+}
