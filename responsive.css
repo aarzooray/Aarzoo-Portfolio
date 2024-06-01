@@ -84,16 +84,26 @@ input{
     /* border: 2px solid red; */
     width: 100%;
     font-size: 10px;
-    height:40vh;
+    height:1005;
 }
 #profileSection #image{
-    width: 100%;
+    width: 90%;
     /* border: 2px solid red; */
     
 }
 #image img{
-    width: 70%;
+    width: 100%;
     border-radius: 1em;
+}
+#section-1{
+    width: 40%;
+    height: 50%;
+}
+#section-2{
+    /* background-color: red; */
+    width: 50%;
+    height: 50%;
+    font-size: 12px;
 }
 #tagline{
     /* border: 2px solid red; */
@@ -125,5 +135,12 @@ input{
     align-items: center;
     height: 9%;
     justify-content: center;
+}
+#navitem{
+    display: none;
+}
+#btn{
+    display: block;
+    color :black;
 }
 }
