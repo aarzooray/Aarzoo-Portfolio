@@ -1,4 +1,5 @@
 
+//onMobileScreenSize
 window.addEventListener("DOMContentLoaded", function () {
     function crossAndHamburger() {
         let nav = document.querySelector("nav");
@@ -40,7 +41,7 @@ window.addEventListener("DOMContentLoaded", function () {
     crossAndHamburger();
 })
 
-
+//Typing Effect (Not in Use)
 function typingEffect() {
     let profession = document.querySelector("#profession");
 
@@ -98,63 +99,49 @@ window.addEventListener("DOMContentLoaded", function () {
 }
 
 
-//bg on scroll
-
-let item = document.querySelectorAll(".item");
-
-
-window.addEventListener("scroll",function(dets){
-    let var3 = this.scrollY;
-    console.log(var3)
-    // if((var3>0) && (var3<532))
-    //     {
-
-    //         item[0].classList.add("active");
-    //     }
-    // else if((var3>532) && (var3<1050))
-    //     {
-
-    //         item[2].classList.add("active");
-    //     }
-    // else
-    //     {
-
-    //         !item[3].classList.add("active");
-    //     }
-})
-
-
-
-
 
 // client's work showcase
 function workShowCase(){
 
     const worksList = document.querySelectorAll(".worksList");
     let works = document.querySelector("#works");
-    
-    works.addEventListener("wheel",function(event){
-        event.preventDefault();
-        this.scrollLeft += event.deltaY;
-    })
+    // By default it should be scrolled
+    works.scrollLeft = 100;
+   
+    let slideArrow1 = document.querySelector("#slideArrow1");
+    let slideArrow2 = document.querySelector("#slideArrow2");
+
+    // slideArrow2.style.display = "none"
+   slideArrow1.addEventListener("click",function(){
+    works.scrollBy({left : 200,behavior:"smooth"});
+    // slideArrow2.style.display = "block"
+   })
+   slideArrow2.addEventListener("click",function(){
+    works.scrollBy({left : -200,behavior:"smooth"});
+   })
+    // works.addEventListener("wheel",function(event){
+    //     event.preventDefault();
+    //     this.scrollLeft += event.deltaY;
+    // })
 
 let slider = document.querySelectorAll("#slider");
 
 let click = document.querySelectorAll(".click")
 let img1 = [
-    { name: "PLFarm1", src: "./img/plFarm (1).png" },
-    { name: "PLFarm1", src: "./img/plFarm (2).png" },
-    { name: "PLFarm1", src: "./img/plFarm (3).png" }
+    { name: "PLFarm1", src: "./img/work_Section_Images/plFarm (1).png" },
+    { name: "PLFarm1", src: "./img/work_Section_Images/plFarm (2).png" },
+    { name: "PLFarm1", src: "./img/work_Section_Images/plFarm (3).png" }
 ]
 let img2 = [{ name: "PLFarm1", src: "./img/kg (1).png" },
-{ name: "PLFarm1", src: "./img/kg (2).png" },
-{ name: "PLFarm1", src: "./img/kg (3).png" }
+{ name: "PLFarm1", src: "./img/work_Section_Images/kg (2).png" },
+{ name: "PLFarm1", src: "./img/work_Section_Images/kg (3).png" }
 ]
 let img3 = [{ name: "PLFarm1", src: "./img/cd (1).png" },
-{ name: "PLFarm1", src: "./img/cd (2).png" },
-{ name: "PLFarm1", src: "./img/cd (4).png" },
-{ name: "PLFarm1", src: "./img/cd (5).png" },
-{ name: "PLFarm1", src: "./img/cd (6).png" }
+{ name: "PLFarm1", src: "./img/work_Section_Images/cd (2).png" },
+{ name: "PLFarm1", src: "./img/work_Section_Images/cd (3).png" },
+{ name: "PLFarm1", src: "./img/work_Section_Images/cd (4).png" },
+{ name: "PLFarm1", src: "./img/work_Section_Images/cd (5).png" },
+{ name: "PLFarm1", src: "./img/work_Section_Images/cd (6).png" }
 ]
 
 function clientWebsite( limiter,k,imgNo) {
@@ -186,6 +173,7 @@ function clientWebsite( limiter,k,imgNo) {
 }
 clientWebsite(3,1,img1);
 clientWebsite(3,2,img2);
+clientWebsite(3,3,img2);
 clientWebsite(6,0,img3);
 }
 
@@ -193,47 +181,55 @@ clientWebsite(6,0,img3);
 
 //mouse pointer
 function customMousePointer(){
-
-
-let mousePointer = document.querySelector("#mousePointer")
-window.addEventListener("mousedown", function () {
-    mousePointer.style.width = "80px"
-    mousePointer.style.height = "80px"
-    mousePointer.style.opacity = "0.4"
-
-})
-window.addEventListener("mousemove", function (dets) {
-    mousePointer.style.width = "20px"
-    mousePointer.style.height = "20px"
-    let mouseX = dets.pageX + "px";
-    let mouseY = dets.pageY + "px";
-    mousePointer.style.opacity = "0.8"
-    mousePointer.style.top = mouseY;
-    mousePointer.style.left = mouseX;
-    // console.log(mouseX,mouseY)
-
-})
+    let mousePointerDot = document.querySelector(".mousePointerDot");
+    let mousePointer = document.querySelector(".mousePointer");
+    
+    window.addEventListener("mousemove",function(dets){
+        let x = dets.pageX + "px";
+        let y = dets.pageY + "px";
+        mousePointerDot.style.left = x;
+        mousePointerDot.style.top = y;
+        mousePointer.style.left = x;
+        mousePointer.style.top = y;
+        mousePointerDot.classList.remove("shown"); 
+        mousePointer.classList.remove("widthHuge");
+    })
+    
+    
+    
+    let item = document.querySelectorAll(".item");
+    
+    let anch = document.querySelectorAll("a");
+    console.log(anch)
+    for(let i =0;i<23;i++)
+        {
+            anch[i].addEventListener("mousemove",function(){
+                mousePointerDot.style.width = "5em"; 
+                mousePointerDot.style.height = "5em" ;
+                mousePointerDot.style.backgroundColor = "white" ;
+                mousePointerDot.style.opacity = "0.6" ;
+            
+               mousePointer.style.display = "none";
+            })
+            anch[i].addEventListener("mouseleave",function(){
+                mousePointerDot.style.width = "0.3em" ;
+                mousePointerDot.style.height = "0.3em" ;
+                mousePointerDot.style.opacity = "1" ;
+                // mousePointerDot.style.backgroundColor = "red" 
+                
+               mousePointer.style.display = "block";
+            })
+        }  
 
 }
 
 
-//onGoingBiro
-function customMousePointerCustomize(){
-    let pointerCustom = document.querySelector(".mouseP");
-    let mousePointer = document.querySelector("#mousePointer")
 
 
-   let footerScIcons= document.querySelector("#footerScIcons");
-   footerScIcons.addEventListener("mouseenter",function(){
-   mousePointer.classList.add("mini")
 
-   })
-   footerScIcons.addEventListener("mouseleave",function(){
-    mousePointer.style.backgroundColor = "white";
-    mousePointer.style.width = "50px";
-    mousePointer.style.height = "50px";
-   })
-}
+
+
+
 
 
 
@@ -243,12 +239,11 @@ function onViewPortComeAction()
 document.addEventListener("DOMContentLoaded", function() {
 
 function persona( btnClass,sectionToBeSelected){
-// let btnClass = ".work";
-// let sectionToBeSelected = "#work";
+
     
     const footer = document.querySelector(sectionToBeSelected);
     const workBtn = document.querySelector(btnClass);
-    const active = document.querySelector(".active2");
+
     const observerOptions = {
       root: null, // Use the viewport as the root
       rootMargin: '0px',
@@ -261,7 +256,9 @@ function persona( btnClass,sectionToBeSelected){
           // Add the expanded class to trigger the width transition
         //   footer.classList.add('view');
         workBtn.classList.add("active2");
+        // footer.classList.add("animateSection");
           console.log("target view comes into viewport")
+
           // Optionally stop observing after the action is performed
         //   observer.unobserve(entry.target);
         }
@@ -283,11 +280,37 @@ persona(".intro","#profileSection")
   });
 }
 
-customMousePointerCustomize();
 
+function navItemUnderAnimation(){
+    let spp = document.querySelectorAll(".special");
+    
+    // NavItem Animation Logic
+    
+    let special = document.querySelectorAll(".special");
+    
+    for(let i=0;i<4;i++)
+        {
+    
+            special[i].addEventListener("mouseenter",function(){
+                special[i].classList.add("s");
+            })
+            special[i].addEventListener("mouseleave",function(){
+                special[i].classList.remove("s");
+            })
+        }
+    
+    
+}
+
+
+
+// Calling the Functions
+
+onViewPortComeAction();
 
 circularloader();
 navbarShowOnScrollUp();
+// navItemUnderAnimation();
 workShowCase();
 customMousePointer();
 // typingEffect();

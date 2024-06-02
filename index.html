@@ -1,14 +1,16 @@
-<!-- 
-  || Code Written by Pankaj Kumar Ray (Aarzoo)
 
-  || Coding Started on  25/05/2023
- -->
+  <!-- || Code Written by Pankaj Kumar Ray 
+
+  || Coding Started on  25/05/2023 -->  
 
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
+    <meta name="title" content="Pankaj's Portfolio">
+    <meta name="description" content="I have created this Portfolio website of mine for my Project Purpose">
+    <meta name="keyword" content="Aarzoo Website,Aarzoo,Pankaj's Website,Pankaj Portfolio,Aarzoo Portfolio">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsive.css">
@@ -19,9 +21,10 @@
 <body>
 
     <!-- Mouse Pointer -->
-    <div id="mousePointer" class="mouseP">
-
+    <div class="mousePointerDot"> </div>
+    <div class="mousePointer">
     </div>
+
 
     <!-- Loader -->
     <div class="loader">
@@ -31,7 +34,7 @@
     <!-- Hero Section -->
     <div class="hero" id="heroPage">
 
-        <!-- SideBar Coding - Vertical Bar -->
+        <!-- SideBar Coding - Vertical Bar - Mobile Screen -->
         <nav>
             <div id="sidebar">
 
@@ -39,9 +42,9 @@
                 <div id="logo">Aarzoo</div>
                 <ul id="itemCont">
 
-                    <li><a href="#heroPage">Home</a></li>
+                    <li><a href="#heroPage">Intro</a></li>
+                    <li><a href="#">Work</a></li>
                     <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
                     <li><a href="#ContactPage">Contact</a></li>
                 </ul>
                 <button id="signIn">Resume</button>
@@ -57,16 +60,16 @@
             </div>
         </nav>
 
-<!-- Navbar on Hero Page Code - Horizontal Bar -->
+        <!-- Navbar on Hero Page Code - Horizontal Bar -->
         <div id="container">
             <div id="navbar">
-                <div class="navLogo">Aarzoo</div>
+                <a><div class="navLogo">Aarzoo</div></a>
                 <div id="btn"><i class="ri-menu-fold-fill"></i></div>
                 <div id="navitem">
-                    <li class="intro item"><a href="#">Intro</a></li>
-                    <li class="item work"><a href="#work">Work</a></li>
-                    <li class="item about"><a href="#about">About</a></li>
-                    <li class="item contact"><a href="#ContactPage">Contact</a></li>
+                    <li class="intro item"><a class="special" href="#">Intro</a></li>
+                    <li class="item work"><a class="special " href="#workPage">Work</a></li>
+                    <li class="item about"><a href="#about" class="special">About</a></li>
+                    <li class="item contact"><a href="#ContactPage" class="special">Contact</a></li>
                 </div>
             </div>
 
@@ -76,7 +79,7 @@
 
                 <div id="section-1">
                     <div id="image">
-                        <img src="pp4.jpg" alt="image not displayed">
+                        <img src="./img/hero_And_About_Img/profilePicTransparent.png" alt="image not displayed">
                     </div>
                     <!-- <div id="textCont">
                         <span id="profession">Web Developer</span>
@@ -90,7 +93,7 @@
 
 
 
-                   <a id="cvBtnn" href="#about">Learn More</a>
+                    <a id="cvBtnn" href="#about">Learn More</a>
                 </div>
 
 
@@ -98,15 +101,23 @@
         </div>
         <!-- <div id="circle" class="sphere"></div> -->
     </div>
-<div id="work">
+
 
 
     <div id="workPage">
         <header>My Works</header>
         <div id="works">
+            <!-- SlideArrow -->
+            <div id="arrowBox">
+
+                
+                          <a >  <div class="slideArrow" id="slideArrow2"><i class="ri-arrow-left-fill"></i></div></a>
+                           <a > <div class="slideArrow" id="slideArrow1"><i class="ri-arrow-right-fill"></i></div></a>
+            </div>
+<!-- Slide Arrow End -->
             <div class="worksList" id="3">
                 <div id="slider">
-                    <img src="./img/cd (1).png" alt="">
+                    <img src="./img/work_Section_Images/cd (1).png" alt="">
                     <div id="siteInfo">
 
                     </div>
@@ -117,13 +128,14 @@
                     <span>Codoko Community</span>
                     <span>Community</span>
                     <span>Date: 2024/1/15</span>
-                    <span> Made by Students for Students.They organize Workshops on different technologies,hosts E-Sports game, etc.</span>
+                    <span> Made by Students for Students.They organize Workshops on different technologies,hosts
+                        E-Sports game, etc.</span>
 
                 </div>
             </div>
             <div class="worksList" id="1">
                 <div id="slider">
-                    <img src="./img/plFarm (1).png" alt="">
+                    <img src="./img/work_Section_Images/plFarm (1).png" alt="">
                     <div id="siteInfo">
 
                     </div>
@@ -131,16 +143,17 @@
                 <div class="click"></div>
                 <div id="text">
 
-                    <span>Parvat Fresh Chicken</span>
+                    <span>Parvat Fresh Chicken Store</span>
                     <span>Small Business</span>
                     <span>Date: 2023/1/10</span>
-                    <span>This is Janakpur,Nepal based company.It provides fresh chicken in stock to the customer.</span>
+                    <span>This is Janakpur,Nepal based company.It provides fresh chicken in stock to the
+                        customer.</span>
 
                 </div>
             </div>
-            <div class="worksList" id="2">
+            <div class="worksList" id="4">
                 <div id="slider">
-                    <img src="./img/kg (1).png" alt="">
+                    <img src="./img/work_Section_Images/kg (1).png" alt="">
                     <div id="siteInfo">
 
                     </div>
@@ -151,15 +164,34 @@
                     <span>Superior Kids Kindergarten School</span>
                     <span>Basic Level School</span>
                     <span>Date: 2023/3/27</span>
-                    <span>This is Janakpur,Nepal based company.It provides fresh chicken in stock to the customer.</span>
+                    <span>This is Janakpur,Nepal based company.It provides fresh chicken in stock to the
+                        customer.</span>
 
                 </div>
             </div>
-           
-            
-            
-          
-     
+            <div class="worksList" id="2">
+                <div id="slider">
+                    <img src="./img/work_Section_Images/kg (1).png " alt="">
+                    <div id="siteInfo">
+
+                    </div>
+                </div>
+                <div class="click"></div>
+                <div id="text">
+
+                    <span>Superior Kids Kindergarten School</span>
+                    <span>Basic Level School</span>
+                    <span>Date: 2023/3/27</span>
+                    <span>This is Janakpur,Nepal based company.It provides fresh chicken in stock to the
+                        customer.</span>
+
+                </div>
+            </div>
+
+
+
+
+
 
         </div>
     </div>
@@ -172,7 +204,8 @@
 
             <span id="pro">I'm Front-End Web Developer</span>
 
-            <p id="info">"I am Passionate Developer with over 1 years of Experience.I’m excited to collaborate on your next web project! As a skilled front-end developer, I specialize in
+            <p id="info">"I am Passionate Developer with over 1 years of Experience.I’m excited to collaborate on your
+                next web project! As a skilled front-end developer, I specialize in
                 creating beautiful, responsive, and user-friendly websites. Whether you need a complete website, a
                 redesign, or help with specific features, I'm here to bring your vision to life.."</p>
 
@@ -185,7 +218,7 @@
 
                     <span class="value">17</span>
                 </span>
-                <span class="tag">Job:
+                <span class="tag">Occupation:
 
                     <span class="value">Web Developer</span>
                 </span>
@@ -199,7 +232,7 @@
                 </span>
                 <span class="tag">From:
 
-                    <span class="value">Nepal</span>
+                    <span class="value">Meerut, UP</span>
                 </span>
             </span>
 
@@ -231,11 +264,11 @@
                     </a>
                 </span>
             </div>
-            <img src="./img (2).png" alt="">
+            <img src="./img/hero_And_About_Img/img (2).png" alt="">
         </div>
         <div id="skillsAndEducation">
-            <div  id="skills" class="skillsClass">
-                <header>My Crafts</header>
+            <div id="skills" class="skillsClass">
+                <header>My Skills</header>
                 <span id="skillsItem">
 
                     <div class="skillsHere">
@@ -250,7 +283,7 @@
 
                     <div class="skillsHere">
                         <span id="element">JS</span>
-                        <span id="meter"  class="meterClass"style="width: 42%;"><span id="txt">60%</span></span>
+                        <span id="meter" class="meterClass" style="width: 42%;"><span id="txt">60%</span></span>
                     </div>
 
                     <div class="skillsHere">
@@ -259,11 +292,11 @@
                     </div>
                     <div class="skillsHere">
                         <span id="element">Figma</span>
-                        <span id="meter"  class="meterClass"style="width: 56% ;"><span id="txt">80%</span></span>
+                        <span id="meter" class="meterClass" style="width: 56% ;"><span id="txt">80%</span></span>
                     </div>
-                  
-                    
-                
+
+
+
                 </span>
 
             </div>
@@ -283,12 +316,12 @@
                             <div id="collegeAndBoard">
                                 <div>B.Tech. CSE</div>
                                 <div>1st Year Second Semester</div>
-                               <div>ABSS institite of Technology, Meerut</div>
-                               <div>Dr. APJ Abdul Kalam Technical University, Lucknow</div>
+                                <div>ABSS institite of Technology, Meerut</div>
+                                <div>Dr. APJ Abdul Kalam Technical University, Lucknow</div>
                             </div>
                             <div id="endDate">Present</div>
                         </div>
-                    
+
                     </div>
                     <div id="plus2">
                         <div id="diagram">
@@ -301,17 +334,17 @@
                                 2021
                             </div>
                             <div id="collegeAndBoard">
-                               <div>+2 Level Education</div>
-                               <div>Marks: 78%, GPA: 3.09</div>
-                               <div>Shree Ram Secondary School Matihani, Nepal</div>
-                               <div>NEB Board</div>
-                               
+                                <div>+2 Level Education</div>
+                                <div>Marks: 78%, GPA: 3.09</div>
+                                <div>Shree Ram Secondary School Matihani, Nepal</div>
+                                <div>NEB Board</div>
+
                             </div>
                             <div id="endDate">2023</div>
                         </div>
-                    
+
                     </div>
-                    
+
                 </div>
             </div>
         </div>
@@ -324,32 +357,35 @@
             <h2 id="formHead">Contact Me </h2>
             <h3>Feel Free to Contact. We will get back to you as soon as we can!!</h3>
 
-           <div id="myInfo">
-            <header>Info</header>
+            <div id="myInfo">
+                <header>Info</header>
 
-            <div id="informations">
-                
-                <i class="ri-mail-line"></i><span id="infoText"><a href="mailot:pankajray1288@gmail.com">pankajray1288@gmail.com</a></span>
+                <div id="informations">
+
+                    <i class="ri-mail-line"></i><span id="infoText"><a
+                            href="mailot:pankajray1288@gmail.com">pankajray1288@gmail.com</a></span>
+                </div>
+                <div id="informations">
+
+                    <i class="ri-phone-line"></i><span id="infoText"><a href="tel:+91 7017105535">+91
+                            7017105535</a></span>
+                </div>
+                <div id="informations">
+
+                    <i class="ri-building-line"></i></i><span id="infoText"><a
+                            href="https://maps.app.goo.gl/UnHp9XGsZuEjDeXUA" target="_blank"> ABSSIT, Mawana Road,
+                            Meerut</a></span>
+                </div>
+                <div id="informations">
+
+                    <i class="ri-time-line"></i><span id="infoText">09:00 AM - 05:00 PM</span>
+                </div>
+
             </div>
-            <div id="informations">
-                
-                <i class="ri-phone-line"></i><span id="infoText"><a href="tel:+91 7017105535">+91 7017105535</a></span>
-            </div>
-            <div id="informations">
-                
-                <i class="ri-building-line"></i></i><span id="infoText"><a href
-                    ="https://maps.app.goo.gl/UnHp9XGsZuEjDeXUA" target="_blank"> ABSSIT, Mawana Road, Meerut</a></span>
-            </div>      
-            <div id="informations">
-                
-                <i class="ri-time-line"></i><span id="infoText">09:00 AM - 05:00 PM</span>
-            </div>
-
-        </div>
 
 
 
-         
+
 
         </div>
         <div id="right">
@@ -373,25 +409,25 @@
 
 
 
-<footer>
-    <h3>Design with Love &copy; Aarzoo 2024</h3>
-    <div>
-        <div id="footerScIcons">
+    <footer>
+        <h3>Design with Love &copy; Aarzoo 2024</h3>
+        <div>
+            <div id="footerScIcons">
 
-            <span>
-                <a href="https://www.linkedin.com/in/pankaj-kumar-ray-7ab025299" target="_blank">
+                <span>
+                    <a href="https://www.linkedin.com/in/pankaj-kumar-ray-7ab025299" target="_blank">
 
-                    <i class="ri-linkedin-box-fill"></i>
-                </a> </span>
+                        <i class="ri-linkedin-box-fill"></i>
+                    </a> </span>
 
-            <span><a href="https://github.com/aarzooray" target="_blank"><i class="ri-github-fill"></a></i>
-            </span>
-            <span><a href="https://www.instagram.com/im_pankajray/" target="_blank"><i
-                        class="ri-instagram-line"></i></a></span>
-           
+                <span><a href="https://github.com/aarzooray" target="_blank"><i class="ri-github-fill"></a></i>
+                </span>
+                <span><a href="https://www.instagram.com/im_pankajray/" target="_blank"><i
+                            class="ri-instagram-line"></i></a></span>
+
+            </div>
         </div>
-    </div>
-</footer>
+    </footer>
 
     <script src="logic.js"></script>
 </body>

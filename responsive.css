@@ -1,146 +1,233 @@
 @media (max-width:600px) {
-    #navbar{
+    #navbar {
         /* border: 2px solid red; */
         height: 4.5em;
         /* font-size: 1.3em; */
     }
-    #logo{
-        font-size: 3.2em;
+
+    .navLogo {
+        font-size: 2em;
     }
-    #ContactPage{
+
+    #logo {
+        font-size: 3.0em;
+    }
+
+    #ContactPage {
         display: flex;
         flex-direction: column;
         /* border: 2px solid red; */
         /* background-color: red; */
         height: auto;
     }
-    #left{
+
+    #left {
         font-size: 16px;
         /* border: 2px solid green; */
         width: 90%;
         padding: 1rem 0.5rem;
     }
-    #right{
+
+    #right {
         /* border: 2px solid red; */
         width: 90%;
         height: 100vh;
         font-size: 16px;
     }
-    #right form{
-    background-color: black;
-    height: 90%;
+
+    #right form {
+        background-color: black;
+        height: 90%;
 
     }
-    #formHead
-{
-    font-size: 1.5em;
-}
-#btn{
-    /* color: red; */
-    font-size: 1.6rem;
-}
-#btn:hover{
-    font-size: 1.65rem;
-}
-nav{
-    width: 50%;
-    font-size: 10px;
-}
 
-#sidebar{
-    /* background-color: red; */
-    width: 50%;
-    height: 100%;
+    #formHead {
+        font-size: 1.5em;
+    }
 
-}
-#itemCont{
-    height: 30%;
-    /* border: 2px solid green; */
-}
-#itemCont li a{
-    /* color :red; */
-    /* border: 2px solid red; */
-    padding: 0.4em 0em;
-}
+    #btn {
+        /* color: red; */
+        font-size: 1.6rem;
+    }
 
-#sidebar #itemCont li{
-    /* border: 2px solid red; */
-    padding: 0.5rem 0.3em;
-    font-size: 1.8em
+    #btn:hover {
+        font-size: 1.65rem;
+    }
+
+    nav {
+        width: 50%;
+        font-size: 10px;
+    }
+
+    #sidebar {
+        /* background-color: red; */
+        width: 50%;
+        height: 100%;
+
+    }
+
+    #itemCont {
+        height: 30%;
+        /* border: 2px solid green; */
+    }
+
+    #itemCont li a {
+        /* color :red; */
+        /* border: 2px solid red; */
+        padding: 0.4em 0em;
+    }
+
+    #sidebar #itemCont li {
+        /* border: 2px solid red; */
+        padding: 0.5rem 0.3em;
+        font-size: 1.8em
+    }
+
+    #navbar #logo {
+        font-size: 2em;
+    }
+
+    .hero {
+        height: 80vh;
+
+    }
+
+    input {
+        padding: 0.9em 0.2em;
+    }
+
+    #profileSection {
+        margin-top: 12vh;
+        border: 2px solid red;
+        width: 100%;
+        font-size: 10px;
+        height: 100vh;
+        flex-direction: column;
+        background-color: gainsboro;
+        /* justify-content: center; */
+        /* align-items: center; */
+
+    }
+
+    #profileSection #image {
+        width: 100%;
+        /* border: 2px solid red; */
+
+    }
+
+    #container {
+        /* border: 3px solid green; */
+        /* height: 100vh; */
+
+    }
+
+    #image {
+        /* border: 2px solid red; */
+        height: 50%;
+    }
+
+    #image img {
+        width: 60vw;
+        border-radius: 1em;
+    }
+
+    #section-1 {
+        /* margin-top: 20vh; */
+        width: 40%;
+        /* border: 2px solid green; */
+        height: 40%;
+        margin: 0;
+    }
+
+    #section-2 {
+        background-color: red;
+        width: 80%;
+        height: 40%;
+        font-size: 12px;
+    }
+
+    #tagline {
+        /* border: 2px solid red; */
+        font-size: 1.3em;
+    }
+
+    #cvBtn {
+        font-size: 1.2em;
+        height: 2.8em;
+        width: 80%;
+
+    }
+
+    #textCont {
+        width: 100%;
+    }
+
+    #profession {
+        font-size: 2em;
+        /* color: red; */
+        /* border: 2px solid green; */
+        /* background-color: red; */
+    }
+
+    #textCont span:nth-child(2) {
+        /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+        font-size: 1.5em;
+
+    }
+
+    #submitBtn {
+        /* border: 2px solid red; */
+        display: flex;
+        align-items: center;
+        height: 9%;
+        justify-content: center;
+    }
+
+    #navitem {
+        display: none;
+    }
+
+    #btn {
+        display: block;
+        color: black;
+    }
 
 
-}
-#navbar #logo{
-    font-size: 2em;
-}
-.hero{
-    height: 80vh;
-    
-}
-input{
-    padding: 0.9em 0.2em;
-}
-#profileSection{
-    /* border: 2px solid red; */
-    width: 100%;
-    font-size: 10px;
-    height:1005;
-}
-#profileSection #image{
-    width: 90%;
-    /* border: 2px solid red; */
-    
-}
-#image img{
-    width: 100%;
-    border-radius: 1em;
-}
-#section-1{
-    width: 40%;
-    height: 50%;
-}
-#section-2{
-    /* background-color: red; */
-    width: 50%;
-    height: 50%;
-    font-size: 12px;
-}
-#tagline{
-    /* border: 2px solid red; */
-    font-size: 1.3em;
-}
-#cvBtn{
-    font-size: 1.2em;
-    height: 2.8em;
-    width: 80%;
+    /* New Version Responsive Style */
+    #about {
+        height: 250vh;
+    }
 
-}
-#textCont{
-    width: 100%;
-}
-#profession{
-    font-size: 2em;
-    /* color: red; */
-    /* border: 2px solid green; */
-    /* background-color: red; */
-}
-#textCont span:nth-child(2){
-    /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
-    font-size: 1.5em;
+    #moreInfo {
+        background-color: red;
+        height: 80%;
+        padding: 0;
+        grid-template-columns: repeat(3, 100px);
+        grid-template-rows: 15vh 120vh 100vh;
+    }
 
-}
-#submitBtn{
-    /* border: 2px solid red; */
-    display: flex;
-    align-items: center;
-    height: 9%;
-    justify-content: center;
-}
-#navitem{
-    display: none;
-}
-#btn{
-    display: block;
-    color :black;
-}
+    #skillsAndEducation {
+        background-color: rebeccapurple;
+        flex-direction: column;
+        font-size: 10px;
+        height: 100%;
+    }
+
+    #skills {
+        width: 100%;
+    }
+
+    #skills header {
+        font-size: 1.5em;
+
+
+    }
+
+    #education {
+        width: 100%;
+    }
+
+    #education header {
+        font-size: 1.5em;
+    }
 }
