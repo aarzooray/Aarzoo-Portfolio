@@ -10,17 +10,19 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sevillana&family=Sriracha&family=Ubuntu&display=swap');
 
-
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&display=swap');
+/* font-family: "Catamaran", sans-serif; */
 /* CSS Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Ubuntu", sans-serif;
+    font-family: "Catamaran", sans-serif;
     /* overflow: hidden; */
 }
 
 html {
+    /* overflow: hidden; */
     font-size: 16px;
 }
 
@@ -120,11 +122,11 @@ html {
 
 .hero {
     width: 100%;
-    height: 90vh;
+    height: 85vh;
     display: flex;
     background-image: radial-gradient(gray, black);
 
-    overflow: hidden;
+    /* overflow: hidden; */
 
 }
 
@@ -351,19 +353,22 @@ nav #sidebar li {
 /* _________________________________________________________________________________ */
 #container {
     width: 100%;
-    height: 100vh;
-    /* background-color: red; */
+    height: 85vh;
+   /* background-color:green; */
+   background-color: rgb(145, 143, 143);
+
 }
 
 #navbar {
     width: 100%;
     position: fixed;
     z-index: 20;
-    background: rgb(107, 106, 106);
-    height: 14vh;
+   
+    background-color: rgb(31, 28, 28);
+    height: 15vh;
     display: flex;
     justify-content: space-between;
-    padding: 1rem 2rem;
+    padding: 1rem 2.5rem;
     align-items: center;
     /* visibility: hidden; */
     /* opacity: 0; */
@@ -384,8 +389,8 @@ nav #sidebar li {
     position: relative;
     list-style-type: none;
     /* border: 1px solid red; */
-    padding: 0.3em 1.1em;
-    margin: 0.2em 0.4em;
+    padding: 0.5em 1.5em;
+    /* margin: 0.2em 0.4em; */
     font-size: 1.2em;
     height: 100%;
     transition: all ease 0.2s;
@@ -393,7 +398,7 @@ nav #sidebar li {
 
 
 #navitem li a {
-    color: black;
+    color: white;
     text-decoration: none;
     z-index: 20;
     padding: 1.2px 0.4px;
@@ -428,6 +433,7 @@ nav #sidebar li {
     background-color: grey;
     border-radius: 2px;
     /* border: 3px solid gray; */
+    color: white;
     text-align: center;
 
 
@@ -440,11 +446,16 @@ nav #sidebar li {
 
 .navLogo {
     color: white;
-    font-size: 3em;
+    font-size: 2.3em;
     font-family: "Poetsen One", sans-serif;
-    box-shadow: 1px 2px solid black;
+    text-shadow: 1px 2px  black;
     cursor: pointer;
     /* font-style: italic; */
+}
+#zoo{
+    color: crimson;
+    font-family: "Poetsen One", sans-serif;
+    font-size: 1.2em;
 }
 
 @keyframes animi {
@@ -478,16 +489,16 @@ nav #sidebar li {
 
 #profileSection {
     width: 100%;
-    height: 90vh;
+    height: 70vh;
     background-color: rgb(145, 143, 143);
-
+margin-top:15vh;
     /* border: 2px solid red; */
     display: flex;
-    top: 50%;
+    /* top: 50%; */
     z-index: 3;
-    left: 50%;
+    /* left: 50%; */
     position: relative;
-    transform: translate(-50%, -50%);
+    /* transform: translate(-50%, -50%); */
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
@@ -495,16 +506,30 @@ nav #sidebar li {
 }
 
 #section-1 {
+
     /* border:2px solid red; */
     width: 45%;
     display: flex;
+    /* background-color: black; */
+    /* transform: rotate(100deg); */
+    /* border-bottom-right-radius: 10em; */
     flex-direction: column;
 
     align-items: center;
     justify-content: center;
-    height: 100%;
+    height: 80%;
 }
-
+#section-1::before
+{
+    content: " ";
+    width: 40vw;
+    /* top: -01em; */
+    height: 40vw;
+    /* background-color: white; */
+    /* border-right: 1px ridge black; */
+    position: absolute;
+    transform: rotate(10deg);
+}
 #image {
     /* border: 2px solid red; */
     width: 50%;
@@ -523,9 +548,9 @@ nav #sidebar li {
 #image img {
     width: 20vw;
     /* border: 1px solid white; */
-    box-shadow: 10px 10px rgb(139, 130, 130),
+    /* box-shadow: 10px 10px rgb(139, 130, 130),
         inset 2px 3px rgb(211, 231, 211);
-        background: rgb(187 54 54 / 96%);
+        background: rgb(187 54 54 / 96%); */
     filter: hue-rotate(350deg);
     border-radius: 4px;
     /* height: 38vh; */
@@ -553,10 +578,10 @@ nav #sidebar li {
 
 #section-2 {
     width: 45%;
-    height: 60%;
-    background-color: rgb(124, 121, 121);
-    border-left: 2px solid gainsboro;
-    border-right: 2px solid gainsboro;
+    height: 80%;
+    background-color: rgb(143, 141, 141);
+    /* border-left: 2px solid gainsboro; */
+    /* border-right: 2px solid gainsboro; */
     padding: 1.2em;
     display: flex;
     /* transform: skew(3deg); */
@@ -585,14 +610,14 @@ nav #sidebar li {
     font-size: 1.5em;
     /* opacity: 0.9; */
     color: white;
-    /* margin-top: 0.6em; */
-    letter-spacing: 0.06em;
+    margin-top: 0.9em;
+    /* letter-spacing: 0.06em; */
 }
 
 #WhatIDo {
-    /* margin-top: 1em; */
+    margin-top: -0.2em;
     font-size: 1.2em;
-    line-height: 1.8em;
+    line-height: 1.4em;
 }
 
 #tagline {
@@ -622,18 +647,31 @@ nav #sidebar li {
     transition: all 0.5s ease;
 
 }
+.animateDTT{
+    animation: 1.5s   ease-in-out animo;
+
+}
+@keyframes animo{
+    from{
+        transform: translate(0%,10%);
+    }
+    to{
+        transform: translate(0%,0%);
+    }
+}
 
 #cvBtnn:hover {
     /* box-shadow: 2px 3px 1px red; */
-    background-color: white;
+    /* background-color: white; */
     color: black;
 }
 
 #key {
     /* color: white; */
-    background-color: rgb(128, 128, 128);
+    /* background-color: rgb(128, 128, 128); */
+
     /* width: 30px; */
-    /* color: white; */
+    color: crimson;
     padding: 1px 5px;
     border-radius: 0.1em;
 }
@@ -664,7 +702,7 @@ nav #sidebar li {
     display: none;
 }
 
-@keyframes animi2 {
+/* @keyframes animi2 {
     0% {
         top: 10%;
         left: 0%;
@@ -730,7 +768,7 @@ nav #sidebar li {
         left: 10%
     }
 
-}
+} */
 
 
 
@@ -807,7 +845,7 @@ nav #sidebar li {
 }
 /* #information */
 #informations{
-    z-index: 12342;
+    z-index: 122;
     font-size:1.2em;
     display: flex;
     flex-direction: row;
@@ -932,7 +970,9 @@ textarea {
     font-size: 16px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    position: relative;
+    gap: 5%;
+    /* justify-content: center; */
     align-items:center;
     color: white;
     /* grid-template-columns: 100% ; */
@@ -941,16 +981,15 @@ textarea {
 
 header {
     width: 100%;
-    height: 18%;
+    height: 10%;
     display: flex;
     align-items: center;
     justify-content: center;
-
     font-weight: 700;
     font-size: 2.2em;
     text-align: center;
     font-size: roboto, "sans-serif";
-    /* background-color: red; */
+    background-color: rgb(31, 28, 28);
 }
 
 #works {
@@ -958,10 +997,10 @@ header {
     /* border: 2px solid red; */
     /* display: inline-block; */
     margin: 0px 5%;
-    width: 93%;
+    width: 90%;
     column-gap: 1em;
     row-gap: 1em;
-    height: 80%;
+    height: 90%;
     white-space: nowrap;
     /* align-items: center; */
     /* justify-content: center; */
@@ -973,45 +1012,31 @@ header {
 }
 #arrowBox{
     /* padding: 2px 2em; */
+    top: 50%;
     position: absolute;
-    width: 90%;
-    height: 75%;
+    height: 10%;
     /* border: 1px solid rebeccapurple; */
     display: flex;
     /* column-gap: 92%; */
-    gap: 82.8%;
+    /* gap: 82.8%; */
+    align-items: center;
     justify-content:space-between;
+    width: 100%;
 
 }
 #arrowBox a{
     text-decoration: none;
-}
-.slideArrow{
-    position: relative;
-    width: 2em;
-    height: 2em;
-    top: 50%;
-    transform: translateY(-50%);
-/* border: 1px solid white; */
 
+  
+}
+#arrowBox i{
+    font-size: 3.5em;
 }
 
-.slideArrow i{
-    border: 2px solid white;
-    color: white;
-    font-size: 1.8em;
-    background-color: gray;
-    border-radius: 100%;
-transition: all 0.4s ease;
-padding: 0.5em;
-}
-.slideArrow i:hover{
-    background-color: rgb(128, 128, 121);
-}
-
-#slideArrow1{
+/* #slideArrow1{
     transform: translate(10px);
-}
+} */
+
 
 .worksList {
 
@@ -1382,9 +1407,38 @@ flex-direction: column;
 background-color: transparent;
     /* opacity: 0; */
 }
+#skills:hover{
+   
+
+}
+.animateLeft{
+    animation: 0.7s ease-in-out animateLeft;
+}
+.animateRight{
+    animation: 0.7s ease-in-out animateRight;
+}
+@keyframes animateLeft {
+    from{
+        transform: translateX(-15vh);
+    }
+    to{
+        transform: translateX(-0vh);
+    }
+    
+}
+@keyframes animateRight {
+    from{
+        transform: translateX(15vh);
+    }
+    to{
+        transform: translateX(0vh);
+    }
+    
+}
 #skills header{
     color: white;
     height: 14%;
+
 
 }
 #skillsItem{
@@ -1454,6 +1508,7 @@ background-color: transparent;
 
 /* Education ________________________________________*/
 #education{
+
     width: 50%;
     height: 100%;
     background-color: gainsboro;
@@ -1519,7 +1574,6 @@ header{
     height: 70%;
 }
 #collegeAndBoard
-
 {
     /* border: 2px solid green; */
     height: 100%;

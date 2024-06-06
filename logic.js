@@ -76,11 +76,14 @@ window.addEventListener("scroll", function (dets) {
     if (scrollCurrent > scrollBack) {
         navy.style.display = "none"
 
+
     }
     else {
-    ;
-        navy.style.display = "flex"
+    
+        navy.style.display = "flex";
+        navy.style.backgroundColor = " rgb(31, 28, 28)";
     }
+    // rgb(107, 106, 106)
 
     scrollBack = scrollCurrent;
 
@@ -106,7 +109,7 @@ function workShowCase(){
     const worksList = document.querySelectorAll(".worksList");
     let works = document.querySelector("#works");
     // By default it should be scrolled
-    works.scrollLeft = 100;
+    // works.scrollLeft = 100;
    
     let slideArrow1 = document.querySelector("#slideArrow1");
     let slideArrow2 = document.querySelector("#slideArrow2");
@@ -185,6 +188,8 @@ function customMousePointer(){
     let mousePointer = document.querySelector(".mousePointer");
     
     window.addEventListener("mousemove",function(dets){
+
+        
         let x = dets.pageX + "px";
         let y = dets.pageY + "px";
         mousePointerDot.style.left = x;
@@ -243,6 +248,9 @@ function persona( btnClass,sectionToBeSelected){
     
     const footer = document.querySelector(sectionToBeSelected);
     const workBtn = document.querySelector(btnClass);
+    let education = document.getElementById("education");
+    let skills = document.getElementById("skills");
+
 
     const observerOptions = {
       root: null, // Use the viewport as the root
@@ -256,8 +264,11 @@ function persona( btnClass,sectionToBeSelected){
           // Add the expanded class to trigger the width transition
         //   footer.classList.add('view');
         workBtn.classList.add("active2");
+        education.classList.add("animateRight")
+        skills.classList.add("animateLeft")
+        // footer.classList.add("animateDTT")
         // footer.classList.add("animateSection");
-          console.log("target view comes into viewport")
+        //   console.log("target view comes into viewport")
 
           // Optionally stop observing after the action is performed
         //   observer.unobserve(entry.target);
@@ -272,6 +283,7 @@ function persona( btnClass,sectionToBeSelected){
     observer.observe(footer);
 
 }
+
 persona(".work","#works")
 persona(".about","#about")
 persona(".contact","#ContactPage")

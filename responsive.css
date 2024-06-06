@@ -18,13 +18,14 @@
         flex-direction: column;
         /* border: 2px solid red; */
         /* background-color: red; */
-        height: auto;
+        height: 150vh;
     }
 
     #left {
         font-size: 16px;
         /* border: 2px solid green; */
         width: 90%;
+        height: 50vh;
         padding: 1rem 0.5rem;
     }
 
@@ -34,7 +35,12 @@
         height: 100vh;
         font-size: 16px;
     }
-
+    #myInfo{
+        width: 100%;
+    }
+#informations{
+    width: 100%;
+}
     #right form {
         background-color: black;
         height: 90%;
@@ -87,65 +93,52 @@
         font-size: 2em;
     }
 
-    .hero {
-        height: 80vh;
-
-    }
+   
 
     input {
         padding: 0.9em 0.2em;
     }
+    /* Hero Section Responsive Page Design */
+    .hero {
+        height: 80vh;
 
+    }
     #profileSection {
-        margin-top: 12vh;
-        border: 2px solid red;
+        margin-top: 10vh;
+        /* border: 2px solid red; */
         width: 100%;
         font-size: 10px;
-        height: 100vh;
+        height: 70vh;
         flex-direction: column;
         background-color: gainsboro;
-        /* justify-content: center; */
-        /* align-items: center; */
+        /* justify-content: center;
+        align-items: center; */
 
     }
-
+    #section-1 {
+        /* margin-top: 20vh; */
+        width: 40vh;
+        /* border: 2px solid green; */
+        height: 60%;
+        margin: 0;
+    }
     #profileSection #image {
         width: 100%;
-        /* border: 2px solid red; */
-
-    }
-
-    #container {
-        /* border: 3px solid green; */
-        /* height: 100vh; */
-
-    }
-
-    #image {
-        /* border: 2px solid red; */
         height: 50%;
-    }
+        /* border: 2px solid red; */
 
+    }
     #image img {
-        width: 60vw;
+        width: 80%;
         border-radius: 1em;
     }
 
-    #section-1 {
-        /* margin-top: 20vh; */
-        width: 40%;
-        /* border: 2px solid green; */
-        height: 40%;
-        margin: 0;
-    }
-
     #section-2 {
-        background-color: red;
-        width: 80%;
+        /* background-color: red; */
+        width: 100%;
         height: 40%;
         font-size: 12px;
     }
-
     #tagline {
         /* border: 2px solid red; */
         font-size: 1.3em;
@@ -174,6 +167,23 @@
         font-size: 1.5em;
 
     }
+/* Workpage Styling */
+#workPage{
+    height: 50vh;
+    font-size: 10px;
+    gap: 0;
+
+}
+
+#works{
+    /* border: 2px solid red; */
+    margin: 0;
+}
+.worksList{
+    width: 80%;
+}
+
+
 
     #submitBtn {
         /* border: 2px solid red; */
@@ -194,40 +204,128 @@
 
 
     /* New Version Responsive Style */
+
     #about {
-        height: 250vh;
-    }
 
-    #moreInfo {
-        background-color: red;
-        height: 80%;
-        padding: 0;
-        grid-template-columns: repeat(3, 100px);
-        grid-template-rows: 15vh 120vh 100vh;
+        height: 100%;
+        font-size: 10px;
+        row-gap: 1em;
+        grid-template-columns: 100vw;
+        grid-template-rows: 13vh 79vh 100vh;
     }
-
-    #skillsAndEducation {
-        background-color: rebeccapurple;
+ 
+    #about header{
+        height: 40%;
+        font-size: 1.9em;
+    }
+    #photo{
+        display: none;
+    }
+    #aboutMe{
+        margin-top: 0;
+        /* border: 2px solid yellow; */
+        width: 100%;
+        row-gap: 0.6em;
+    }
+    #pro{
+        font-size: 1.5em;
+    }
+    #moreInfo{
+        background-color: rgb(138, 133, 133);
+        /* height: 50%; */
+        width: 100%;
+        padding:0.3em 1em;
+        /* align-items: center; */
+        justify-content: left; 
+        border-top: 2px solid white;
+        /* display: grid; */
+        display: flex;
+        /* align-items: center; */
+justify-content: space-around;
         flex-direction: column;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+    .tag{
+        /* border: 2px solid gold; */
+        color: white;
+        
+    }
+    .value
+    {
+        display: inline;
+    }
+    #aboutMe #info{
+        text-align: justify;
+        letter-spacing: 0;
+        line-height: 1.2em;
+    }
+    #contactMe{
+        /* border: 1px solid hotpink; */
+        width: 100%;
+        height: 30%;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+    }
+    .btn{
+        width: 100%;
+        margin: 0;
+        height: 02.5em;
+    }
+
+    #skillsHeader
+{
+    width: 100%;
+    background-color: rgb(31, 28, 28);
+    height: 10%;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center
+    ;
+    font-size: 1.8em
+}
+  
+    #skillsAndEducation {
+        /* border: 1px solid black; */
+        margin: 0;
+        /* background-color: rebeccapurple; */
+        flex-direction: column;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         font-size: 10px;
         height: 100%;
     }
 
     #skills {
-        width: 100%;
+        width: 90%;
     }
 
     #skills header {
+        width:100%;
+        height:20%;
         font-size: 1.5em;
 
 
     }
 
     #education {
-        width: 100%;
+        width: 90%;
     }
 
     #education header {
+        width: 100%;
         font-size: 1.5em;
     }
+}
+
+/* Contact page Styling */
+#contactPage{
+    border: 2px solid green;
 }
