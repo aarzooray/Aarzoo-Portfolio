@@ -263,9 +263,10 @@ function persona( btnClass,sectionToBeSelected){
         if (entry.isIntersecting) {
           // Add the expanded class to trigger the width transition
         //   footer.classList.add('view');
+ 
         workBtn.classList.add("active2");
-        education.classList.add("animateRight")
-        skills.classList.add("animateLeft")
+        // education.classList.add("animateRight")
+        // skills.classList.add("animateLeft")
         // footer.classList.add("animateDTT")
         // footer.classList.add("animateSection");
         //   console.log("target view comes into viewport")
@@ -326,3 +327,48 @@ navbarShowOnScrollUp();
 workShowCase();
 customMousePointer();
 // typingEffect();
+
+
+document.addEventListener("DOMContentLoaded", function() {
+
+    function sectionToAnimateFun(animationStuff,sectionToAnimate)
+    {
+        console.log(animationStuff,sectionToAnimate)
+    
+    const sec = document.querySelector(sectionToAnimate);
+    const animateStuff = document.querySelector(animationStuff);
+    console.log(animateStuff)
+    // const worksListSection = document.querySelector(".itsAnimate");s
+    
+        const observerOptions = {
+          root: null, // Use the viewport as the root
+          rootMargin: '0px',
+          threshold: 0.0 // Trigger when 50% of the footer is visible
+        };
+    
+        const observerCallback = (entries, observer) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              // Add the expanded class to trigger the width transition
+    sec.classList.add(animateStuff)
+         
+    
+              // Optionally stop observing after the action is performed
+            //   observer.unobserve(entry.target);
+            }
+            // else{
+            // // workBtn.classList.remove("active2");\
+            // educationSection.classList.remove("animateRight")
+            // skillsSection.classList.remove("animateLeft")
+            // }
+          });
+        };
+    
+        const observer = new IntersectionObserver(observerCallback, observerOptions);
+        observer.observe(sec);
+    
+   
+    
+    }
+    sectionToAnimateFun(".animateRight",".skillClass");
+      });

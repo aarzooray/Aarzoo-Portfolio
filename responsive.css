@@ -1,4 +1,13 @@
+
+
 @media (max-width:600px) {
+    .mousePointerDot{
+        display: none;
+    
+    }
+    .mousePointer{
+        display: none;
+    }
     #navbar {
         /* border: 2px solid red; */
         height: 4.5em;
@@ -26,7 +35,7 @@
         font-size: 16px;
         /* border: 2px solid green; */
         width: 90%;
-        height: 50vh;
+        height: 80vh;
         padding: 1rem 0.5rem;
     }
 
@@ -66,9 +75,10 @@
         font-size: 10px;
     }
 
+
     #sidebar {
         /* background-color: red; */
-        width: 70%;
+        width: 80%;
         height: 100%;
 
     }
@@ -111,7 +121,7 @@
         font-size: 10px;
         height: 70vh;
         flex-direction: column;
-        background-color: gainsboro;
+        /* background-color: gainsboro; */
         /* justify-content: center;
         align-items: center; */
 
@@ -120,7 +130,7 @@
         /* margin-top: 20vh; */
         width: 40vh;
         /* border: 2px solid green; */
-        height: 60%;
+        height: 100%;
         margin: 0;
     }
     #profileSection #image {
@@ -191,7 +201,7 @@
         /* display: flex;
         align-items: center;
         justify-content: center; */
-        height: 6.5vh;
+        height: 6.0vh;
         width: 60%;       
     }
 
@@ -223,8 +233,9 @@
     }
     #aboutMe{
         margin-top: 0;
-        /* border: 2px solid yellow; */
+        border: 2px solid yellow;
         width: 100%;
+        /* height: 50vh; */
         row-gap: 0.6em;
     }
     #pro{
@@ -273,7 +284,7 @@ justify-content: space-around;
     .btn{
         width: 100%;
         margin: 0;
-        height: 02.5em;
+        height: 3.4em;
     }
 
     #skillsHeader
@@ -307,13 +318,7 @@ justify-content: space-around;
         width: 100%;
     }
 
-    #skills header {
-        width:100%;
-        height:20%;
-        font-size: 1.5em;
-
-
-    }
+   
 
     #education {
         width: 100%;
@@ -323,9 +328,8 @@ justify-content: space-around;
         width: 100%;
         font-size: 1.5em;
     }
-}
+    /* Contact page Styling */
 
-/* Contact page Styling */
 #contactPage{
     border: 2px solid green;
 }
@@ -334,14 +338,15 @@ justify-content: space-around;
 }
 
 
-/* footer */
-footer{
-    height: 20%;
-    width: 100%;
-    /* border: 2px solid red; */
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-    align-items: center;
-    justify-content: center;
+    footer{
+        height: 20%;
+        width: 100%;
+         /* border: 2px solid red;  */
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        align-items: center;
+        justify-content: center;
+    }
+
 }
