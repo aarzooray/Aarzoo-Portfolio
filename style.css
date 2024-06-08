@@ -433,6 +433,7 @@ nav #sidebar a {
     height: 85vh;
     /* background-color:green; */
     background-color: rgb(145, 143, 143);
+    background-image: url(./img/pageImg/vecteezy_metaverse-blue-technology-background-template_5897906.jpg);
 
 }
 
@@ -576,6 +577,9 @@ nav #sidebar a {
     width: 100%;
     height: 70vh;
     background-color: rgb(145, 143, 143);
+    background-image: url(./img/pageImg/darkNightBg.jpg);
+    background-size: contain;
+    background-position: center;
     margin-top: 15vh;
     /* border: 2px solid red; */
     display: flex;
@@ -593,7 +597,7 @@ nav #sidebar a {
 #section-1 {
 
     /* border:2px solid red; */
-    width: 45%;
+    width: 50%;
     display: flex;
     /* background-color: black; */
     /* transform: rotate(100deg); */
@@ -617,9 +621,9 @@ nav #sidebar a {
 }
 
 #image {
-    /* border: 2px solid red; */
-    width: 50%;
-    height: 50vh;
+    border: 2px solid red;
+    width: 70%;
+    height: 90vh;
     perspective: 3;
     display: flex;
     align-items: center;
@@ -632,7 +636,7 @@ nav #sidebar a {
 }
 
 #image img {
-    width: 20vw;
+    width: 23vw;
     /* border: 1px solid white; */
     /* box-shadow: 10px 10px rgb(139, 130, 130),
         inset 2px 3px rgb(211, 231, 211);
@@ -665,13 +669,14 @@ nav #sidebar a {
 #section-2 {
     width: 45%;
     height: 80%;
-    background-color: rgb(143, 141, 141);
+    /* background-color: rgb(143, 141, 141); */
     /* border-left: 2px solid gainsboro; */
     /* border-right: 2px solid gainsboro; */
     padding: 1.2em;
     display: flex;
     /* transform: skew(3deg); */
     align-content: center;
+    color: white;
     justify-content: center;
     align-items: flex-start;
     /* justify-content: flex-start; */
@@ -869,7 +874,8 @@ nav #sidebar a {
 
 #ContactPage {
     width: 100%;
-    height: 100vh;
+    height: 100vmin;
+
     background-image: linear-gradient(rgb(54, 52, 52), grey);
     display: flex;
     flex-direction: row;
@@ -1347,8 +1353,9 @@ justify-content: flex-end; */
 }
 
 .infoHighlight{
-    background-color:grey;
-    border-bottom: 1px solid white;
+    /* background-color:grey; */
+    font-weight: 600;
+    /* border-bottom: 1px solid white; */
 }
 #infoIcons i{
     font-size: 1.4rem;
@@ -1858,4 +1865,9 @@ footer div a {
     font-size: 2em;
     font-weight: 900;
     text-align: center;
+}
+
+#loveMsg{
+  color: crimson; 
+  background-color: rgb(2, 2, 2);
 }
