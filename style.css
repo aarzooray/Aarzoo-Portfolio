@@ -621,7 +621,7 @@ nav #sidebar a {
 }
 
 #image {
-    border: 2px solid red;
+    /* border: 2px solid red; */
     width: 70%;
     height: 90vh;
     perspective: 3;
@@ -636,7 +636,7 @@ nav #sidebar a {
 }
 
 #image img {
-    width: 23vw;
+    width: 24vw;
     /* border: 1px solid white; */
     /* box-shadow: 10px 10px rgb(139, 130, 130),
         inset 2px 3px rgb(211, 231, 211);
@@ -1536,6 +1536,9 @@ justify-content: flex-end; */
     cursor: pointer;
     /* margin: 0.3em 1em; */
     transition: all 0.4s ease;
+}
+.btn i{
+    padding: 0px 5px;
 }
 
 .btn:nth-child(1) {
