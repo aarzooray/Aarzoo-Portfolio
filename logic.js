@@ -131,9 +131,7 @@ let slider = document.querySelectorAll("#slider");
 
 let click = document.querySelectorAll(".click")
 let img1 = [
-    { name: "PLFarm1", src: "./img/work_Section_Images/plFarm (1).png" },
-    { name: "PLFarm1", src: "./img/work_Section_Images/plFarm (2).png" },
-    { name: "PLFarm1", src: "./img/work_Section_Images/plFarm (3).png" }
+    { name: "PLFarm1", src: "./img/work_Section_Images/musicNightShow.jpeg" }
 ]
 let img2 = [{ name: "PLFarm1", src: "./img/kg (1).png" },
 { name: "PLFarm1", src: "./img/work_Section_Images/kg (2).png" },
@@ -174,10 +172,10 @@ function clientWebsite( limiter,k,imgNo) {
         change();
     }
 }
-clientWebsite(3,1,img1);
+// clientWebsite(3,1,img3);
 clientWebsite(3,2,img2);
-clientWebsite(3,3,img2);
-clientWebsite(6,0,img3);
+// clientWebsite(3,3,img2);
+// clientWebsite(1,0,img1);
 }
 
 
