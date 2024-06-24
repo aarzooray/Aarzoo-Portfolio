@@ -433,7 +433,7 @@ nav #sidebar a {
     height: 85vh;
     /* background-color:green; */
     background-color: rgb(145, 143, 143);
-    background-image: url(./img/pageImg/vecteezy_metaverse-blue-technology-background-template_5897906.jpg);
+    background-image: url(./img/pageImg/darkNightBg.jpg);
 background-position: center;
 background-size: cover;
 background-repeat: no-repeat;
@@ -768,6 +768,7 @@ background-repeat: no-repeat;
     /* background-color: rgb(128, 128, 128); */
 
     /* width: 30px; */
+    font-size: 1.1em;
     color: crimson;
     padding: 1px 5px;
     border-radius: 0.1em;

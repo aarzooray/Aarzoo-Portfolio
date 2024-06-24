@@ -13,12 +13,12 @@
 
     #navbar {
         /* border: 2px solid red; */
-        height: 4.5em;
+        height:6em;
         /* font-size: 1.3em; */
     }
 
     .navLogo {
-        font-size: 2em;
+        font-size: 2.3em;
     }
 
     #logo {
@@ -69,11 +69,11 @@
 
     #btn {
         color: red;
-        font-size: 1.6rem;
+        font-size:2rem;
     }
 
     #btn:hover {
-        font-size: 1.65rem;
+        font-size: 2.1rem;
     }
 
     nav {
@@ -84,9 +84,12 @@
 
     #sidebar {
         /* background-color: red; */
-        width: 80%;
+        width: 100%;
         height: 100%;
 
+    }
+    .sidebarLogo{
+        font-size: 3.3em;
     }
 
     #itemCont {

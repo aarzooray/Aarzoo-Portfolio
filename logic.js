@@ -322,7 +322,7 @@ onViewPortComeAction();
 circularloader();
 navbarShowOnScrollUp();
 // navItemUnderAnimation();
-workShowCase();
+// workShowCase();
 customMousePointer();
 // typingEffect();
 
