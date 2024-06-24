@@ -445,7 +445,7 @@ background-repeat: no-repeat;
     z-index: 20;
 
     background-color: rgb(31, 28, 28);
-    height: 15vh;
+    height: 13vh;
     display: flex;
     justify-content: space-between;
     padding: 1rem 2.5rem;
@@ -469,7 +469,7 @@ background-repeat: no-repeat;
     position: relative;
     list-style-type: none;
     /* border: 1px solid red; */
-    padding: 0.5em 1.5em;
+    padding: 0.3em 1.5em;
     /* margin: 0.2em 0.4em; */
     font-size: 1.2em;
     height: 100%;
@@ -625,7 +625,7 @@ background-repeat: no-repeat;
 #image {
     /* border: 2px solid red; */
     width: 70%;
-    height: 90vh;
+    height: 80vh;
     perspective: 3;
     display: flex;
     align-items: center;
@@ -638,7 +638,7 @@ background-repeat: no-repeat;
 }
 
 #image img {
-    width: 24vw;
+    width: 23vw;
     /* border: 1px solid white; */
     /* box-shadow: 10px 10px rgb(139, 130, 130),
         inset 2px 3px rgb(211, 231, 211);

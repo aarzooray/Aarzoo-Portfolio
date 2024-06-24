@@ -173,7 +173,7 @@ function clientWebsite( limiter,k,imgNo) {
     }
 }
 // clientWebsite(3,1,img3);
-clientWebsite(3,2,img2);
+// clientWebsite(3,2,img2);
 // clientWebsite(3,3,img2);
 // clientWebsite(1,0,img1);
 }
@@ -322,7 +322,7 @@ onViewPortComeAction();
 circularloader();
 navbarShowOnScrollUp();
 // navItemUnderAnimation();
-// workShowCase();
+workShowCase();
 customMousePointer();
 // typingEffect();
 
@@ -355,9 +355,9 @@ document.addEventListener("DOMContentLoaded", function() {
             //   observer.unobserve(entry.target);
             }
             // else{
-            // // workBtn.classList.remove("active2");\
-            // educationSection.classList.remove("animateRight")
-            // skillsSection.classList.remove("animateLeft")
+            workBtn.classList.remove("active2");
+            educationSection.classList.remove("animateRight")
+            skillsSection.classList.remove("animateLeft")
             // }
           });
         };
